@@ -1,0 +1,23 @@
+[
+  {
+    "nome": "Mega Funk Pesadão",
+    "descricao": "Grave extremo pra academia e carro",
+    "preco": "19,90",
+    "imagem": "assets/images/funk.jpg",
+    "checkout": "https://seulinkdepagamento.com"
+  },
+  {
+    "nome": "Phonk Insano",
+    "descricao": "Foco total e energia máxima",
+    "preco": "9,90",
+    "imagem": "assets/images/phonk.jpg",
+    "checkout": "https://seulinkdepagamento.com"
+  },
+  {
+    "nome": "Arrocha Deita",
+    "descricao": "Pra curtir no volume máximo",
+    "preco": "14,90",
+    "imagem": "assets/images/arrocha.jpg",
+    "checkout": "https://seulinkdepagamento.com"
+  }
+]
