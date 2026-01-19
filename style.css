@@ -1,0 +1,143 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --bg-main: #0b0b0b;
+  --bg-card: #151515;
+  --neon-green: #00ff99;
+  --neon-purple: #b100ff;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+}
+
+/* BODY */
+body {
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  padding: 30px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #000, #111);
+  border-bottom: 1px solid #1f1f1f;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* CONTAINER */
+.container {
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: linear-gradient(180deg, #151515, #0f0f0f);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 
+    0 0 20px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 
+    0 0 30px rgba(177, 0, 255, 0.35),
+    0 0 10px rgba(0, 255, 153, 0.25);
+}
+
+/* IMAGEM */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* TEXTO */
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* PREÇO */
+.price {
+  margin: 12px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--neon-green);
+  text-shadow: 0 0 8px rgba(0, 255, 153, 0.6);
+}
+
+/* BOTÃO */
+a.btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--neon-green), var(--neon-purple));
+  color: #000;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 15px rgba(0, 255, 153, 0.8),
+    0 0 20px rgba(177, 0, 255, 0.6);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  border-top: 1px solid #1f1f1f;
+}
+
+/* MOBILE AJUSTES */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
